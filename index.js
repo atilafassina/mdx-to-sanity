@@ -18,7 +18,7 @@ const success = (id, type, name) => {
   console.log(`✔  Entry ${id} of type ${type} created: ${name}`)
 }
 
-const idFromTitle = (title) => title.toLowerCase().replace(' ', '-')
+const idFromTitle = (title) => title.toLowerCase().replace(/\s/g, '-')
 
 const createAllPosts = async (glob = []) => {
   const posts = await fg(glob)

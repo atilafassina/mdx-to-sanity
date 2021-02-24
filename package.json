@@ -8,6 +8,9 @@
     "email": "atila@fassina.eu",
     "url": "https://atila.io"
   },
+  "scripts": {
+    "shoot": "node index.js"
+  },
   "license": "ISC",
   "private": false,
   "dependencies": {
