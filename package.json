@@ -1,5 +1,5 @@
 {
-  "name": "plain-mdx-to-sanity",
+  "name": "mdx-to-sanity",
   "version": "0.0.1",
   "description": "Migrating MDX data to Sanity",
   "main": "index.js",
@@ -11,6 +11,10 @@
   "scripts": {
     "shoot": "node index.js"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "license": "ISC",
   "private": false,
   "dependencies": {
@@ -18,5 +22,8 @@
     "dotenv": "^8.2.0",
     "fast-glob": "^3.2.5",
     "gray-matter": "^4.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
